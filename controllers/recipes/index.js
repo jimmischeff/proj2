@@ -1,29 +1,25 @@
-const {Router} = require('express');
+//////////////////////////////////
+// DEPENDENCIES
+/////////////////////////////////
+const { Router } = require("express");
+const auth = require("../authmiddleware");
+
+///////////////////////////////////////
+// CREATE ROUTER
+///////////////////////////////////////
 const router = Router();
-const recipes = require('../../models/dbSchema/index');
 
-/////////////////////////
-//ROUTES
-/////////////////////////
+///////////////////////////////////////
+// ROUTES
+///////////////////////////////////////
 
-//INDEX
+//TEST ROUTE TO SHOW HOW AUTH MIDDLEWARE WORKS
 
-//NEW
-router.get('/recipes/new', (req, res) => {
-    res.render('../../views/new')
-})
-//DESTROY
+router.get("/new", (req, res) => {
+  res.render('new.jsx');
+});
 
-//UPDATE
-
-//CREATE
-
-//EDIT
-
-//SHOW
-
-
-////////////////////
-//EXPORT
-////////////////////
+///////////////////////////////////////
+// Export Router
+///////////////////////////////////////
 module.exports = router;
