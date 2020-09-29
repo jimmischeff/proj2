@@ -19,6 +19,7 @@ const mongoose = require("./db/dbconn");
 // ROUTERS
 const authRouter = require("./controllers/auth");
 const testRouter = require("./controllers/test");
+const recipeRouter = require("./controllers/recipes/index");
 
 // OTHER IMPORTS
 const session = require("express-session");
@@ -61,6 +62,8 @@ app.get("/", (req, res) => {
 
 app.use("/auth", authRouter);
 app.use("/test", testRouter);
+app.use("/recipes", recipeRouter);
+
 
 ////////////////////////
 //APP LISTENER
