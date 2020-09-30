@@ -5,13 +5,15 @@ class New extends React.Component {
     render() {
         return(
             <Layout title='NEW'>
-                <label>
-                    New Recipe
-                    <input type='text' />
-                    <input type='text' />
-                    <input type='text' />
+                <form action='/recipes' method='POST'>
+                    New Recipe <br/>
+                    Name: <input type='text' name='name'/> <br/>
+                    Img URL: <input type='text' name='img'/> <br/>
+                    Time: <input type='number' name='time'/> <br/>
+                    Calories: <input type='number' name='calories'/> <br/>
+                    Ingredients: <input type='text' name='ingredients'/> <br/>
                     <input type='submit' value='Add Recipe'/>
-                </label>
+                </form>
             </Layout>
         )
     }
