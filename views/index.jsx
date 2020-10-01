@@ -14,6 +14,9 @@ class Index extends React.Component {
               Calories: {recipe.calories} <br/>
               Ingredients: {recipe.ingredients} <br/>
               <a href={`/recipes/${recipe._id}/edit`}>Edit</a>
+              <form action={`/recipes/${recipe._id}?_method=DELETE`} method='POST'>
+                <input type='submit' value= 'DELETE' />
+              </form>
             </div>
           )
         })}

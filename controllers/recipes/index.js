@@ -32,6 +32,11 @@ router.get("/new", (req, res) => {
 });
 
 //DESTROY
+router.delete('/:id', (req, res) => {
+  recipes.findByIdAndRemove(req.params.id, (err, data) => {
+    res.redirect('/recipes')
+  })
+})
 
 //UPDATE
 router.put('/:id', (req, res) => {
