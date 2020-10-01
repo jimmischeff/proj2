@@ -60,6 +60,11 @@ router.get('/:id/edit', (req, res) => {
 })
 
 //SHOW
+router.get("/:id", (req, res) => {
+  recipes.findById(req.params.id, (err, foundRecipe) => {
+    res.render('show.jsx', {recipe: foundRecipe})
+  })
+})
 
 ///////////////////////////////////////
 // Export Router

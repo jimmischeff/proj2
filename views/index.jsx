@@ -8,7 +8,7 @@ class Index extends React.Component {
         {this.props.recipes.map((recipe) => {
           return(
             <div>
-              <a href='#'>{recipe.name}</a> <br/>
+              <a href={`/recipes/${recipe._id}`}>{recipe.name}</a> <br/>
               {<img src={recipe.img} />} <br/>
               Time: {recipe.time} <br/>
               Calories: {recipe.calories} <br/>
