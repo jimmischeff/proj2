@@ -12,7 +12,8 @@ class Index extends React.Component {
               {<img src={recipe.img} />} <br/>
               Time: {recipe.time} <br/>
               Calories: {recipe.calories} <br/>
-              Ingredients: {recipe.ingredients}
+              Ingredients: {recipe.ingredients} <br/>
+              <a href={`/recipes/${recipe._id}/edit`}>Edit</a>
             </div>
           )
         })}
