@@ -5,6 +5,8 @@ class Edit extends React.Component {
     render() {
         return(
             <Layout title='Edit the things'>
+                <main className='showMain'>
+                <h2><a href='/recipes'>Back to Main</a></h2> <br/>
                 <form action={`/recipes/${this.props.recipe._id}?_method=PUT`} method='POST'>
                 New Recipe <br/>
                     Name: <input type='text' name='name' defaultValue={this.props.recipe.name} /> <br/>
@@ -14,6 +16,7 @@ class Edit extends React.Component {
                     Ingredients: <input type='text' name='ingredients'defaultValue={this.props.recipe.ingredients}/> <br/>
                     <input type='submit' value='Update Recipe'/>
                 </form>
+                </main>
             </Layout>
         )
     }

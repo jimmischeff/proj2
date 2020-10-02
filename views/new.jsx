@@ -5,6 +5,8 @@ class New extends React.Component {
     render() {
         return(
             <Layout title='NEW'>
+                <main className='showMain'>
+                <h2><a href='/recipes'>Back to Main</a></h2> <br/>
                 <form action='/recipes' method='POST'>
                     New Recipe <br/>
                     Name: <input type='text' name='name'/> <br/>
@@ -14,6 +16,7 @@ class New extends React.Component {
                     Ingredients: <input type='text' name='ingredients'/> <br/>
                     <input type='submit' value='Add Recipe'/>
                 </form>
+                </main>
             </Layout>
         )
     }

@@ -8,9 +8,9 @@ class Index extends React.Component {
         {this.props.recipes.map((recipe) => {
           return(
             <div>
-              <a href={`/recipes/${recipe._id}`}>{recipe.name}</a> <br/>
+              <h2><a href={`/recipes/${recipe._id}`}>{recipe.name}</a></h2> <br/>
               {<img src={recipe.img} />} <br/>
-              Time: {recipe.time} <br/>
+              Time: {recipe.time} minutes<br/>
               Calories: {recipe.calories} <br/>
               Ingredients: {recipe.ingredients} <br/>
               <a href={`/recipes/${recipe._id}/edit`}>Edit</a>

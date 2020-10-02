@@ -16,6 +16,7 @@ class Layout extends React.Component {
           </header>
           <main>{this.props.children}</main>
           <footer>
+            <h3><a href='/auth/logout'>Logout</a></h3>
           </footer>
         </body>
       </html>

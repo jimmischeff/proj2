@@ -3,18 +3,26 @@ h1 {
 }
 
 img {
-    width: 150px;
+    max-width: 100%;
+    max-height: 75%;
 }
 
 div {
     background: blanchedalmond;
+    margin: 25px;
 }
 
 main {
      display: flex;
+     flex-direction: column;
 }
 
 header {
     text-align: center;
     margin: 25px;
+    background-color: rgba(234,152,40);
+}
+
+.showMain {
+    display: inline-block;
 }
