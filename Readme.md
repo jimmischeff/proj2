@@ -26,3 +26,17 @@ SECRET=cheese
 - If you want the connect.session() warning to go away you can configure a mongo session store using the following library => https://www.npmjs.com/package/connect-mongo
 
 MAKE SURE TO JOIN THE SLACK AND DISCORD COMMUNITIES AT DEVNURSERY.COM
+
+/////////////////////////////////////////
+///PROJECT NOTES
+/////////////////////////////////////////
+
+Used class examples of fruits and todo list and utilized a similar format to accomplish the recipe website.  
+
+First roadblock was getting the controller to render, my mistake was in the route on my get statement being redundant, after that the project moved along pretty smoothly.  The boiler plate Alex provided was super helpful and made the logging in requirement for this project as easy as requiring it in the router and calling it in the routes.  
+
+I would like to be able to enter ingredients individually, and every time I hit a button to submit it will add the entry into an array to make teh ingredient block more dynamic.  Also, a search function to find recipes specific to a certain ingredient.  Maybe include an API from an online cook book.
+
+Styling I just played around with css and flex properties to display how I wanted them.  and added a font family via a link tag in my layout and applying it to the html tag.
+
+heroku URL: https://jszenproj2.herokuapp.com/auth/login
