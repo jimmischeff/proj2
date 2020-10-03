@@ -18,11 +18,11 @@ div {
 main {
      display: flex;
      flex-direction: column;
+     background-color: rgba(234,152,40);
 }
 
 header {
     text-align: center;
-    margin: 25px;
     background-color: rgba(234,152,40);
 }
 
